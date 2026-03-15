@@ -8,7 +8,9 @@
 (defpackage #:cl-signature-utils
   (:use #:cl)
   (:export
-   ;; Signature encoding
+   #:with-signature-utils-timing
+   #:signature-utils-batch-process
+   #:signature-utils-health-check;; Signature encoding
    #:der-encode-signature
    #:der-decode-signature
    #:compact-signature
